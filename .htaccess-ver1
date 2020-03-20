@@ -4,7 +4,7 @@ RewriteBase /
 
 # external redirect from actual URL to pretty one
 RewriteCond %{THE_REQUEST} /aa-tesztek/rewrite-test-1/paginator\.php\?pag=([^\s&]+) [NC]
-RewriteRule ^ /aa-tesztek/rewrite-test-1/pag-%1? [R=302,L,NE]
+RewriteRule ^ /aa-tesztek/rewrite-test-1/pag-%1? [R=301,L,NE]
 
 RewriteRule ^pag-([^/.]*)$ /aa-tesztek/rewrite-test-1/paginator.php?pag=$1 [NC,L,QSA]
 
